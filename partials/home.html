@@ -10,6 +10,9 @@
 
 <ul>
 	<li ng-repeat="post in posts | filter: { tags: tagFilter } | orderBy:'-created'">
-		{{post.title}} - {{post.created | ago }} by {{post.author}}  <a href='/#/{{post.file}}' >Read It!!</a>
+		<span>{{ post.title }} - {{ post.created | ago }} by {{ post.author }}</span>
+		<a href='/#/{{ post.file }}'>Read It!!</a>
+		<br>
+		<span ng-repeat="tag in post.tags" ng-click="updateSearch(tag)">#{{ tag }} </span>
 	</li>
 </ul>

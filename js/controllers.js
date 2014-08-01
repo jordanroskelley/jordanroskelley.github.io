@@ -23,6 +23,9 @@ angular.module('myApp.controllers', [])
 		});
 
 	/************************************* Controller Functions */
+	$scope.updateSearch = function(tag) {
+		$scope.tagFilter = tag;
+	};
 }])
 .controller('PostCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
 	/***************************************** Controller Setup */

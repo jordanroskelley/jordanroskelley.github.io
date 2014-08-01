@@ -4,13 +4,13 @@
 		"author":	"Jordan Roskelley",
 		"created":	"2014-07-31 8:00 am",
 		"file":		"posts/post1.md",
-		"tags":		"oracle, odac, odp"
+		"tags":		["oracle", "odac", "odp"]
 	},
 	{
 		"title":	"The Second Post",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-01 8:00 am",
 		"file":		"posts/post2.md",
-		"tags":		"microsoft, model, odac"
+		"tags":		["microsoft", "model", "odac"]
 	}
 ]}
