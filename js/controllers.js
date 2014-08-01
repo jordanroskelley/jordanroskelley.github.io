@@ -14,6 +14,7 @@ angular.module('myApp.controllers', [])
 	$http.get(url)
 		.success(function(data) {
 			$scope.posts = data.posts;
+			$scope.tags = data.alltags;
 		})
 		.error(function(data, status) {
 			console.log('error');
