@@ -70,7 +70,7 @@ Certificate fingerprint (SHA1): 5E:47:D9:26:C5:B9:89:D7:8B:08:58:F1:CB:52:00:66:
 
 ### What key signed my app?
 
-If you want to reverse the process and see which key signed an app:
+If you want to reverse the signing process and see which key signed an app:
 
 1. Unzip the apk (yes, every 'app' is just a zip file with a fancy extension, rename it from `file.apk` to `file.zip`, then unzip it)
 2. Inside that folder (along with a bunch of compiled gobbledygook) should be a folder called `META-INF` with a file `CERT.RSA`
@@ -100,27 +100,6 @@ KeyIdentifier [
 ```
 
 Now, you'll notice that the SHA1 line in there is the same as the SHA1 from the previous section when we printed what was in the keystore. Yay!
-
----
-
-### Creating a signed app
-
-Ok, we've got all this key junk out of the way, lets do this!
-
-In Android Studio, click Build -> Generate Signed APK
-
-* Pick the project to compile
-* Select the keystore and enter the passwords and aliases
-* Pick an output folder, and Build Type (probably Release)
-* Once that completes, you should now have an apk file called AppName-release.apk wherever you set the output to
-
----
-
-### Developer account
-
-You will also need to [create a developer account on the Play Store][link1]. This is what you will use to distribute your apps.
-
-The process to submit a signed app to the Play Store is fairly self-explanitory once you get there, so I'm not gonna waste your time here. Just remember to come up with good descriptions and take good screenshots.
 
 ---
 

@@ -1,3 +1,8 @@
+<h2>Posts</h2>
+
+<p>This is a collection of links, snippets and instructions that I wish I would have had when I started mobile development.</p>
+
+<p>If you see a problem, please <a href='https://github.com/jordanroskelley/jordanroskelley.github.io/issues'>report it here</a></p>
 
 <div class='row'>
 	<ul class='list-inline'>
@@ -7,7 +12,9 @@
 		</li>
 	</ul>
 </div>
+
 <br>
+
 <ul>
 	<li ng-repeat="post in posts | filter: { tags: tagFilter } | orderBy:'-created'" style='list-style-type: none;'>
 		<a href='/#/{{ post.file }}'><h3 style="margin:0px">{{ post.title }}</h3></a>
