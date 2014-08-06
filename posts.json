@@ -5,57 +5,91 @@
 		"created":	"2014-08-01 08:00",
 		"file":		"posts/2014-08-01_TODO.md",
 		"tags":		["all", "todo", "posts"]
-	},
-	{
-		"title":	"The Markdown Example Post",
+	},{
+		"title":	"Markdown Examples",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-01 13:00",
 		"file":		"posts/2014-08-01_Markdown.md",
 		"tags":		["all", "markdown", "posts"]
-	},
-	{
+	},{
 		"title":	"Setting up for Android Development",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-01 14:00",
 		"file":		"posts/2014-08-01_Android_Setup.md",
-		"tags":		["all", "android", "studio"]
-	},
-	{
+		"tags":		["all", "android", "studio", "native"]
+	},{
 		"title":	"Android Keystore",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-01 15:00",
 		"file":		"posts/2014-08-01_Android_Keystore.md",
-		"tags":		["all", "android", "studio", "keystore", "deploy"]
-	},
-	{
+		"tags":		["all", "android", "studio", "keystore", "deploy", "native"]
+	},{
 		"title":	"Gradle and the Android Build Process",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-01 17:00",
 		"file":		"posts/2014-08-01_Android_Gradle.md",
-		"tags":		["all", "android", "studio", "build", "deploy", "library"]
-	},
-	{
+		"tags":		["all", "android", "studio", "build", "deploy", "library", "native"]
+	},{
 		"title":	"Android Project Structure",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-04 10:30",
 		"file":		"posts/2014-08-04_Android_Project_Structure.md",
-		"tags":		["all", "android", "folder", "project"]
-	},
-	{
+		"tags":		["all", "android", "folder", "project", "native"]
+	},{
 		"title":	"Android Project Structure, Part 2",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-04 12:30",
 		"file":		"posts/2014-08-04_Android_Project_Structure_pt2.md",
-		"tags":		["all", "android", "folder", "project", "advanced"]
-	},
-	{
+		"tags":		["all", "android", "folder", "project", "advanced", "native"]
+	},{
 		"title":	"ADB - Android Debug Bridge",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-04 13:00",
 		"file":		"posts/2014-08-04_Android_ADB.md",
-		"tags":		["all", "android", "adb", "setup"]
+		"tags":		["all", "android", "adb", "setup", "native"]
+	},{
+		"title":	"node.js",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-06 13:00",
+		"file":		"posts/2014-08-06_Nodejs.md",
+		"tags":		["all", "web", "node", "setup", "npm"]
+	},{
+		"title":	"Grunt",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-06 14:00",
+		"file":		"posts/2014-08-06_Grunt.md",
+		"tags":		["all", "web", "grunt", "setup"]
+	},{
+		"title":	"Bootstrap",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-06 15:30",
+		"file":		"posts/2014-08-06_Bootstrap.md",
+		"tags":		["all", "web", "bootstrap", "css", "design", "javascript"]
 	}
 ],
 "alltags":[
-	"all", "android", "studio", "keystore", "deploy", "markdown", "posts"
+	"adb",
+	"advanced",
+	"all",
+	"android",
+	"bootstrap",
+	"build",
+	"css",
+	"deploy",
+	"design",
+	"folder",
+	"grunt",
+	"javascript",
+	"keystore",
+	"library",
+	"markdown",
+	"native",
+	"node",
+	"npm",
+	"posts",
+	"project",
+	"setup",
+	"studio",
+	"todo",
+	"web"
 ]}

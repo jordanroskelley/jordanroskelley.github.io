@@ -1,18 +1,17 @@
 <h2>Posts</h2>
 
-<p>This is a collection of links, snippets and instructions that I wish I would have had when I started mobile development.</p>
+<p>This is a collection of links, snippets and instructions that I wish I'd had when I started programming. Most of it is mobile development related.</p>
 
 <p>If you see a problem, please <a href='https://github.com/jordanroskelley/jordanroskelley.github.io/issues'>report it here</a></p>
 
-<div class='row'>
-	<ul class='list-inline'>
-		<li>
-			<h4>Search Topic</h4>
-			<input type='text' ng-model='tagFilter'/>
-		</li>
-	</ul>
-</div>
+<ul class='list-inline'>
+	<p class='h3'>Topics</p><input type='text' ng-model='tagFilter'/>
+</ul>
+<ul class='list-inline'>
+	<li ng-repeat="tag in tags | orderBy: tag" ng-click="updateSearch(tag)"><a href=''>#{{ tag }}</a></li>
+</ul>
 
+<br>
 <br>
 
 <ul>
@@ -24,8 +23,6 @@
 		<br>
 		<br>
 	</li>
-
-	<hr>
-	<a ng-repeat="tag in tags | orderBy: tag" ng-click="updateSearch(tag)" href=''>#{{ tag }}&nbsp;&nbsp;&nbsp;</a>
-	<hr>
 </ul>
+
+<hr>

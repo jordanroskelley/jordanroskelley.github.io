@@ -1,5 +1,7 @@
 # Gradle and the Android Build Process
 
+![Gradle][img2]
+
 ---
 
 ### What is Gradle?
@@ -168,4 +170,5 @@ The process to submit a signed app to the Play Store is fairly self-explanitory 
 [link6]: http://ant.apache.org/ivy/history/trunk/settings/version-matchers.html
 [link7]: http://stackoverflow.com/questions/14979856/gradle-dependency-versions-sign
 
-[img1]: /assets/2014-08-04/sync_gradle.png
+[img1]: /assets/2014-08-01/sync_gradle.png
+[img2]: /assets/2014-08-01/gradle.png

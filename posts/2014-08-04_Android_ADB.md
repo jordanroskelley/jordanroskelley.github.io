@@ -10,7 +10,7 @@ ADB is how you communicate with an Android device or emulator. It stands for And
 
 The IDE uses adb to upload your app to a device and read it's logs.
 
-Things I use adb for outside the IDE:
+Things I use adb for (outside the IDE):
 
 * Check if my device is recognized
 	* `adb devices`
@@ -22,7 +22,8 @@ List of devices attached
 	* `adb kill server`
 * Get to the command line on your device
 	* `adb shell`
-* Manually upload signed apk for testing before deploying to Play Store
+	* Side note: if your device is rooted, then from here, you can enter `sudo su` and then browse any directory on the device
+* Manually upload signed apk (for testing before deploying to Play Store)
 	* `adb install myapplication-release.apk`
 * Deleting apps that were signed with the wrong key
 	* `adb uninstall com.something.myapplication`
