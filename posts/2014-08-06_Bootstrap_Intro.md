@@ -20,6 +20,31 @@ Bootstrap eases the development of high quality websites, just like jQuery eases
 
 ---
 
+### Installing/Adding
+
+Go [download Bootstrap][link5]. Once downloaded, you will need to add it to your HTML, example below:
+
+```
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' href='css/vendor/bootstrap.min.css'>
+	</head>
+	<body>
+		
+
+		<!--THE REST OF YOUR PAGE GOES HERE...-->
+
+
+		<!--Bootstrap requires jQuery-->
+		<script src='js/vendor/jquery-2.1.1.min.js'></script>
+		<script src='js/vendor/bootstrap.min.js'></script>
+	</body>
+</html>
+```
+
+---
+
 ### Grid System
 
 If you've never used a grid system before, it can be a bit confusing at first. Basically, imagine your page being vertically divided into twelve slices. You can break up those twelve slices however you want. Things didn't really gel for me until I saw a picture:
@@ -71,8 +96,9 @@ Beyond the above, the documentation is fairly easy to understand, and they have 
 
 [http://getbootstrap.com/examples/grid/][link3]
 
-
 [http://getbootstrap.com/css/][link4]
+
+[http://getbootstrap.com/getting-started/][link5]
 
 ---
 
@@ -80,6 +106,7 @@ Beyond the above, the documentation is fairly easy to understand, and they have 
 [link2]: https://github.com/twbs/bootstrap
 [link3]: http://getbootstrap.com/examples/grid/
 [link4]: http://getbootstrap.com/css/
+[link5]: http://getbootstrap.com/getting-started/
 
 [img1]: /assets/2014-08-06/bootstrap.png
 [img2]: /assets/2014-08-06/12grid.png

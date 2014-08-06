@@ -60,10 +60,16 @@
 		"file":		"posts/2014-08-06_Grunt.md",
 		"tags":		["all", "web", "grunt", "setup"]
 	},{
-		"title":	"Bootstrap",
+		"title":	"Bootstrap Intro",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-06 15:30",
-		"file":		"posts/2014-08-06_Bootstrap.md",
+		"file":		"posts/2014-08-06_Bootstrap_Intro.md",
+		"tags":		["all", "web", "bootstrap", "css", "design", "javascript"]
+	},{
+		"title":	"Bootstrap Examples",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-06 15:30",
+		"file":		"posts/2014-08-06_Bootstrap_Examples.md",
 		"tags":		["all", "web", "bootstrap", "css", "design", "javascript"]
 	}
 ],

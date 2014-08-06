@@ -1,4 +1,4 @@
-#Setting up for Android Development
+# Setting up for Android Development
 
 ---
 
@@ -11,7 +11,7 @@ You will need an IDE to develop for Android, lets go get one
 
 ---
 
-###Devices
+### Devices
 Eventually, you will want to deploy things to a device. Make sure you have a cable, and device. If you need a new device, I personally recommend [Nexus devices][link5]. They are kept up to date, easy to deploy to, and price per performance, cannot be beat.
 
 * If needed, install drivers for your device
@@ -41,7 +41,7 @@ Eventually, you will want to deploy things to a device. Make sure you have a cab
 
 ---
 
-###Install a Git client
+### Install a Git client
 I use git for version control
 
 * Technically Android Studio has Git built in. If you like IDE integrated source control, check it out.
@@ -52,7 +52,7 @@ I use git for version control
 
 ---
 
-###Extras
+### Extras
 There are tons of things you can do to customize your experience
 
 * Dark themed IDE
@@ -62,7 +62,8 @@ There are tons of things you can do to customize your experience
 
 ---
 
-####Sources
+#### Sources
+
 [http://www.eclipse.org/downloads/][link1]
 
 [http://developer.android.com/sdk/index.html][link2]
