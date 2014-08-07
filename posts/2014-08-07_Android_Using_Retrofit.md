@@ -8,17 +8,19 @@
 
 [The Docs][link1]
 
-Retrofit is a type-safe REST client for Android and Java... What?!?
+Retrofit is a type-safe REST client for Android and Java... a what?!?
 
-On Android, if you want to get data from a web server, you have to create an HTTP connection, make a request, receive a response, parse the response into an object of some sort, and then use that object. Oh, and you have to do this all on a background thread, otherwise your app will crash. Oh yeah, and different versions of Android can have different HTTP stacks available. There are hundreds of tutorials on how to write your own HTTP calling widget. I don't really recommend that unless you are a masochist. I tried it, and got it pretty close to usable, but it was never really reliable. Instead, I recommend using some sort of library to abstract away all that HTTP pain.
+On Android, if you want to get data from a web server, you have to create an HTTP connection, make a request, receive a response, parse that binary response into a String, then turn that String into an object of some sort, and then use that object. Oh, and you have to do this all on a background thread, otherwise your app will crash. Oh yeah, and different versions of Android can have different HTTP stacks available. There are hundreds of tutorials on how to write your own HTTP calling widget. I don't really recommend that unless you are a masochist. I tried it, and got it pretty close to usable, but it was never really reliable. Instead, I recommend using some sort of library to abstract away all that HTTP pain.
 
-So that brings us to Retrofit. Retrofit is a library from Square Inc (yes, the mobile payment company), that makes getting data nice.
+At first, I started using a library from Google called [Volley][link4]. Volley was pretty nice, but there were still a few bugs that I couldn't seem to kill and the documentation was pretty sparse (it will get better over time). So, I switched to Retrofit after attending a [presentation on it][link6] by [Austyn Mahoney][link5]. He even put some examples on [Github][link7].
+
+So that brings us to Retrofit. Retrofit is a library from Square Inc (yes, the mobile payment company, their open source projects are great), that makes getting data nice.
 
 ---
 
 ### Getting Retrofit
 
-Luckily for us, Retrofit is available by just adding the library to our Gradle build file (under the dependencies area)
+Thankfully, Retrofit is available by just adding the library to our Gradle build file (under the dependencies area), and re-syncing our Gradle build file.
 
 ```
 compile 'com.squareup.okhttp:okhttp:2.+'
@@ -220,9 +222,21 @@ There is a lot more you can do with Retrofit. You can also create POST and DELET
 
 [https://code.google.com/p/google-gson/][link3]
 
+[http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf][link4]
+
+[https://www.linkedin.com/in/austynmahoney][link5]
+
+[http://bit.ly/1eDiKu3][link6]
+
+[https://github.com/austynmahoney/retrofit-example][link7]
+
 
 [link1]: http://square.github.io/retrofit/
 [link2]: http://www.jsonschema2pojo.org/
 [link3]: https://code.google.com/p/google-gson/
+[link4]: http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf
+[link5]: https://www.linkedin.com/in/austynmahoney
+[link6]: http://bit.ly/1eDiKu3
+[link7]: https://github.com/austynmahoney/retrofit-example
 
 [img1]: /assets/2014-08-07/square.png
