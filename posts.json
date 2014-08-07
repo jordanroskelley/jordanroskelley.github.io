@@ -95,6 +95,12 @@
 		"created":	"2014-08-07 16:30",
 		"file":		"posts/2014-08-07_Funny.md",
 		"tags":		["all", "funny"]
+	},{
+		"title":	"Hitting IIS Externally",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-07 17:15",
+		"file":		"posts/2014-08-07_Hitting_IIS_Externally.md",
+		"tags":		["all", "iis", "microsoft"]
 	}
 ],
 "alltags":[
@@ -111,11 +117,13 @@
 	"folder",
 	"funny",
 	"grunt",
+	"iis",
 	"javascript",
 	"keystore",
 	"library",
 	"markdown",
 	"meta",
+	"microsoft",
 	"native",
 	"node",
 	"npm",
