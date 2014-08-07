@@ -1,0 +1,359 @@
+<h1>Bootstrap Examples</h1>
+
+<hr>
+
+<p class='lead'>Here are some example elements in Bootstrap. For more, see their <a href='http://getbootstrap.com/css/'>css example pages</a> and their <a href='http://getbootstrap.com/components/'>component example pages</a>, they're pretty good.</p>
+
+<p>This page is written in html (instead of markdown) to show how Bootstrap works.</p>
+
+<hr>
+
+<h1>CSS</h1>
+
+<hr>
+
+<h3>Inline text elements</h3>
+
+<p>You can highlight text using the <mark>mark element</mark></p>
+<p>You can show deleted text with the <del>del element</del></p>
+<p>You can show strikethrough text with the <s>s element</s></p>
+<p>You can show inserted text with the <ins>ins element</ins></p>
+<p>You can show underlined text with the <u>u element</u></p>
+<p>You can show small text with the <small>small element</small></p>
+<p>You can show bold text with the <strong>strong element</strong></p>
+<p>You can show italicized text with the <em>em element</em></p>
+<p>You can show small text with the <small>small element</small></p>
+
+<p class="text-muted">text-muted</p>
+<p class="text-primary">text-primary</p>
+<p class="text-success">text-success</p>
+<p class="text-info">text-info</p>
+<p class="text-warning">text-warning</p>
+<p class="text-danger">text-danger</p>
+
+<p class="bg-primary">bg-primary</p>
+<p class="bg-success">bg-success</p>
+<p class="bg-info">bg-info</p>
+<p class="bg-warning">bg-warning</p>
+<p class="bg-danger">bg-danger</p>
+
+<hr>
+
+<h3>Blockquote</h3>
+
+<blockquote>
+	<p>Here is a quote of some sort</p>
+	<small>by Some Famous Person</small>
+</blockquote>
+
+<hr>
+
+<h3>Addresses</h3>
+
+<address>
+  <strong>Your Company</strong><br>
+  123 Wherever St<br>
+  Cool City, OK 88888<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+
+<hr>
+
+<h3>Lists</h3>
+
+<p>You can make lists as usual, but you can also remove styling</p>
+
+<ul class="list-unstyled">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+  <li>Item 6</li>
+  <li>Item 7</li>
+  <li>Item 8</li>
+  <li>Item 9</li>
+</ul>
+
+<p>Or even make lists go horizontal</p>
+
+<ul class="list-inline">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+  <li>Item 6</li>
+  <li>Item 7</li>
+  <li>Item 8</li>
+  <li>Item 9</li>
+</ul>
+
+<p>You can even do cool stuff like this (hint, see how it looks if you make your browser narrow)</p>
+
+<dl class="dl-horizontal">
+  <dt>Item 1</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum commodo nunc, mattis varius lectus sagittis at. Nam quis ante dapibus, malesuada lectus ac, accumsan ante. Morbi luctus, magna quis faucibus sagittis, arcu est mollis turpis, ut mattis augue enim non risus. Morbi vel erat ante. Sed lobortis congue diam, non eleifend sem commodo in. Donec vel tristique arcu. Duis libero enim, tincidunt at eros a, vulputate interdum enim. Morbi mollis ornare magna vel sollicitudin. Fusce feugiat ultricies lacinia.</dd>
+  <dt>Item 2</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum commodo nunc, mattis varius lectus sagittis at. Nam quis ante dapibus, malesuada lectus ac, accumsan ante. Morbi luctus, magna quis faucibus sagittis, arcu est mollis turpis, ut mattis augue enim non risus. Morbi vel erat ante. Sed lobortis congue diam, non eleifend sem commodo in. Donec vel tristique arcu. Duis libero enim, tincidunt at eros a, vulputate interdum enim. Morbi mollis ornare magna vel sollicitudin. Fusce feugiat ultricies lacinia.</dd>
+</dl>
+
+<hr>
+
+<h3>Tables</h3>
+
+<p>You can do stuff with tables too (but be careful, they can be ugly on mobile)</p>
+
+<table class="table table-striped table-hover">
+	<tr>
+		<th>Things</th>
+		<th>Stuffs</th>
+	</tr>
+	<tr>
+		<td class='warning'>Thing 1</td>
+		<td>Stuff 1</td>
+	</tr>
+	<tr>
+		<td>Thing 2</td>
+		<td>Stuff 2</td>
+	</tr>
+	<tr class='danger'>
+		<td>Thing 3</td>
+		<td>Stuff 3</td>
+	</tr>
+</table>
+
+<hr>
+
+<h3>Inputs</h3>
+
+<div class="form-group has-success has-feedback">
+	<label class="control-label" for="inputSuccess2">Input with success</label>
+	<input type="text" class="form-control" id="inputSuccess2">
+	<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+</div>
+<div class="form-group has-warning has-feedback">
+	<label class="control-label" for="inputWarning2">Input with warning</label>
+	<input type="text" class="form-control" id="inputWarning2">
+	<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+</div>
+<div class="form-group has-error has-feedback">
+	<label class="control-label" for="inputError2">Input with error</label>
+	<input type="text" class="form-control" id="inputError2">
+	<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+</div>
+
+<hr>
+
+<h3>Checkboxes and Radios</h3>
+
+<p>Inline means horizontal</p>
+
+<label class="checkbox-inline">
+	<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox-inline">
+	<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox-inline">
+	<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+
+<br>
+
+<p>The default is vertical</p>
+
+<label class="radio">
+	<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+</label>
+<label class="radio">
+	<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+</label>
+<label class="radio">
+	<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+</label>
+
+<hr>
+
+<h3>Select lists / drop downs</h3>
+
+<p>Select one</p>
+<select class="form-control">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	<option>7</option>
+	<option>8</option>
+	<option>9</option>
+</select>
+
+<hr>
+
+<h3>Icons</h3>
+
+<p>You can easily add icons using the <code>&lt;span&gt;</code> element</p>
+
+<span class='glyphicon glyphicon-ok'></span>
+<span class='glyphicon glyphicon-trash'></span>
+<span class='glyphicon glyphicon-home'></span>
+
+<br>
+
+<p>You can even make rating bars (if you are feeling bored)</p>
+
+<span class='glyphicon glyphicon-star'></span>
+<span class='glyphicon glyphicon-star'></span>
+<span class='glyphicon glyphicon-star'></span>
+<span class='glyphicon glyphicon-star-empty'></span>
+<span class='glyphicon glyphicon-star-empty'></span>
+
+<hr>
+
+<h3>Buttons</h3>
+
+<p>You can style buttons</p>
+
+<p>
+  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+  <button type="button" class="btn btn-default btn-lg">Large button</button>
+  <button type="button" class="btn btn-default btn-lg disabled">Disabled button</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary">Default button</button>
+  <button type="button" class="btn btn-default">Default button</button>
+  <button type="button" class="btn btn-default disabled">Disabled button</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-sm">Small button</button>
+  <button type="button" class="btn btn-default btn-sm">Small button</button>
+  <button type="button" class="btn btn-default btn-sm disabled">Disabled button</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+  <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+  <button type="button" class="btn btn-default btn-xs disabled">Disabled button</button>
+</p>
+
+<p>You can make links look like buttons</p>
+
+<a href='#/rawposts/2014-08-06_Bootstrap_Examples.html' class='btn btn-default'>I'm a link :D</a>
+
+<hr>
+
+<h3>Images</h3>
+
+<img src="/assets/2014-08-01/megaman.jpg" class="img-rounded">
+<br>
+<br>
+<img src="/assets/2014-08-01/megaman.jpg" class="img-circle">
+<br>
+<br>
+<img src="/assets/2014-08-01/megaman.jpg" class="img-thumbnail">
+
+<hr>
+
+<h3>Alignment</h3>
+
+<p>You can force things to align on a certain side using classes <code>pull-left</code> or <code>pull-right</code></p>
+<p>Note, it may be better to use the grid system in some instances, it depends, choose wisely.</p>
+
+<p class='pull-left'>Left pull text</p>
+<p class='pull-right'>Right pull text</p>
+
+<br>
+<br>
+
+<p>Also, it can throw off spacing. Be careful!</p>
+
+<p class='pull-left'>PULL LEFT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum commodo nunc</p>
+<p class='pull-right'>PULL RIGHT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum commodo nunc</p>
+
+<br>
+<br>
+
+<hr>
+
+<h3>Responsive show / hide</h3>
+
+<p>You can make things hide or show based on screen size</p>
+
+<!-- For some reason these weren't working for me -->
+<!--
+<p class="visible-xs-block">Visible xs</p>
+<p class="visible-sm-block">Visible sm</p>
+<p class="visible-md-block">Visible md</p>
+<p class="visible-lg-block">Visible lg</p>
+
+<p class="visible-md-block visible-lg-block">Visible on medium and large</p>
+
+<br>
+-->
+
+<p class="hidden-xs">View is ≥768</p>
+<p class="hidden-sm">View is &lt;768 or ≥992</p>
+<p class="hidden-md">View is &lt;992 or ≥1200</p>
+<p class="hidden-lg">View is &lt;1200</p>
+
+<hr>
+
+<h1>Components</h1>
+
+<hr>
+
+<h3>Badges</h3>
+
+<p>Badges are useful for showing how many whatevers a user has (email, action item, etc)</p>
+
+<a href='#/rawposts/2014-08-06_Bootstrap_Examples.html'>Items requiring attention <span class='badge'>10</span></a>
+
+<hr>
+
+<h3>Panels</h3>
+
+<p>Panels are a nice way to separate content. They are not modal (like a pop up or alert).</p>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Title goes here</h3>
+	</div>
+	<div class="panel-body">Content goes here</div>
+</div>
+
+<br>
+
+<div class="panel panel-warning">
+	<div class="panel-heading">
+		<h3 class="panel-title">Warning, title goes here<span class='glyphicon glyphicon-warning-sign pull-right'></span></h3>
+	</div>
+	<div class="panel-body">Content goes here</div>
+</div>
+
+<br>
+
+<div class="panel panel-danger">
+	<div class="panel-heading">
+		<h3 class="panel-title">Big danger style title here<span class='glyphicon glyphicon-exclamation-sign pull-right'></span></h3>
+	</div>
+	<div class="panel-body">Content goes here</div>
+</div>
+
+<hr>
+
+<h3>Wells</h3>
+
+<p>Wells give things an inset look</p>
+
+<div class='well'>
+	<p>Text in a well</p>
+</div>
+
+<hr>
+
+<h4>Sources</h4>
+
+<a href='http://getbootstrap.com/css/'>http://getbootstrap.com/css/</a>
+<br>
+<a href='http://getbootstrap.com/components/'>http://getbootstrap.com/components/</a>

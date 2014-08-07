@@ -178,8 +178,6 @@ Basically, it maps the name to a memory location.
 
 [http://developer.android.com/guide/topics/manifest/manifest-intro.html][link6]
 
----
-
 [link1]: http://en.wikipedia.org/wiki/Comparison_of_Java_and_Android_API
 [link2]: http://developer.android.com/guide/practices/screens_support.html
 [link3]: http://developer.android.com/guide/topics/resources/string-resource.html

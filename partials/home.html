@@ -4,6 +4,8 @@
 
 <p>If you see a problem, please <a href='https://github.com/jordanroskelley/jordanroskelley.github.io/issues'>report it here</a></p>
 
+<hr>
+
 <ul class='list-inline'>
 	<p class='h3'>Topics</p><input type='text' ng-model='tagFilter'/>
 </ul>
@@ -11,8 +13,7 @@
 	<li ng-repeat="tag in tags | orderBy: tag" ng-click="updateSearch(tag)"><a href=''>#{{ tag }}</a></li>
 </ul>
 
-<br>
-<br>
+<hr>
 
 <ul>
 	<li ng-repeat="post in posts | filter: { tags: tagFilter } | orderBy:'-created'" style='list-style-type: none;'>
@@ -25,4 +26,5 @@
 	</li>
 </ul>
 
-<hr>
+<p>I hope this knowledge is helpful :)</p>
+<img class='img-responsive' src='assets/2014-08-07/dangerous.png' />

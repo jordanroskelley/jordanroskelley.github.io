@@ -100,8 +100,6 @@ Beyond the above, the documentation is fairly easy to understand, and they have 
 
 [http://getbootstrap.com/getting-started/][link5]
 
----
-
 [link1]: http://getbootstrap.com/
 [link2]: https://github.com/twbs/bootstrap
 [link3]: http://getbootstrap.com/examples/grid/

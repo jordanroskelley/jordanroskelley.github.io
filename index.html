@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- BEGIN CSS -->
-	<link rel='stylesheet' href='css/vendor/bootstrap.min.css'>
+	<link rel='stylesheet' href='css/vendor/darkly/bootstrap.min.css'>
 	<link rel='stylesheet' href='css/style.css'>
 	<!-- END CSS -->
 </head>
@@ -19,13 +19,44 @@
 	<a class="sr-only" href="#content">Skip navigation</a>
 
 	<!-- BEGIN MENU -->
-	<header class='navbar navbar-default navbar-fixed-top' role='banner'>
+	<div class='navbar navbar-default navbar-fixed-top'>
 		<div class='container'>
 			<div class='navbar-header'>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<a class='navbar-brand' href='#'>How to do stuff</a>
 			</div>
+
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">Change Theme <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a data-theme="amelia" class="theme-link">Amelia</a></li>
+							<li><a data-theme="cerulean" class="theme-link">Cerulean</a></li>
+							<li><a data-theme="cosmo" class="theme-link">Cosmo</a></li>
+							<li><a data-theme="cyborg" class="theme-link">Cyborg</a></li>
+							<li><a data-theme="darkly" class="theme-link">Darkly</a></li>
+							<li><a data-theme="default" class="theme-link">Default</a></li>
+							<li><a data-theme="flatly" class="theme-link">Flatly</a></li>
+							<li><a data-theme="journal" class="theme-link">Journal</a></li>
+							<li><a data-theme="lumen" class="theme-link">Lumen</a></li>
+							<li><a data-theme="readable" class="theme-link">Readable</a></li>
+							<li><a data-theme="simplex" class="theme-link">Simplex</a></li>
+							<li><a data-theme="slate" class="theme-link">Slate</a></li>
+							<li><a data-theme="spacelab" class="theme-link">Spacelab</a></li>
+							<li><a data-theme="superhero" class="theme-link">Superhero</a></li>
+							<li><a data-theme="united" class="theme-link">United</a></li>
+							<li><a data-theme="yeti" class="theme-link">Yeti</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</header>
+	</div>
 	<!-- END MENU -->
 
 	<!-- BEGIN OLD BROWSER WARNING -->
@@ -54,6 +85,7 @@
 
 	<script src='js/app.js'></script>
 	<script src='js/controllers.js'></script>
+	<script src='js/main.js'></script>
 	<!-- END SCRIPT -->
 </body>
 </html>

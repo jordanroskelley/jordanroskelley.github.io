@@ -74,6 +74,7 @@ angular.module('myApp', [
 	//OPEN ROUTES
 	$routeProvider.when('/', { templateUrl: 'partials/home.html', controller: 'HomeCtrl' });
 	$routeProvider.when('/posts/:postUrl', { templateUrl: 'partials/post.html', controller: 'PostCtrl' });
+	$routeProvider.when('/rawposts/:postUrl', { templateUrl: 'partials/rawPost.html', controller: 'RawPostCtrl' });
 
 	//DEFAULT ROUTE
 	$routeProvider.otherwise({redirectTo: '/'});

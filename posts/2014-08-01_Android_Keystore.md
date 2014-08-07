@@ -111,8 +111,6 @@ Now, you'll notice that the SHA1 line in there is the same as the SHA1 from the 
 
 [http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html][link3]
 
----
-
 [link1]: https://play.google.com/apps/publish/
 [link2]: http://developer.android.com/tools/publishing/app-signing.html
 [link3]: http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html

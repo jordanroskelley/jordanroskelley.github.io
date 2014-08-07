@@ -29,3 +29,4 @@ Yay? How is this useful?
 * You want to be able to tell the difference between your live and dev builds by supplying a different icon. Just add a new `drawable` folder and put in a 'beta' icon.
 * Different settings for your analytics? (ie, you don't want to mess up your statistics by sending analytics when you debug)
 * Turn logging off for deployment
+* You can do more than just xml files too, you can replace whole java files.

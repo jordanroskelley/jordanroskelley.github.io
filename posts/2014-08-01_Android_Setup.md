@@ -70,8 +70,6 @@ There are tons of things you can do to customize your experience
 
 [http://developer.android.com/sdk/installing/studio.html][link3]
 
----
-
 [link1]: http://www.eclipse.org/downloads/
 [link2]: http://developer.android.com/sdk/index.html
 [link3]: http://developer.android.com/sdk/installing/studio.html

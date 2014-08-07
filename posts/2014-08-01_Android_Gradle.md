@@ -160,8 +160,6 @@ The process to submit a signed app to the Play Store is fairly self-explanitory 
 
 [http://stackoverflow.com/questions/14979856/gradle-dependency-versions-sign][link7]
 
----
-
 [link1]: http://gradleplease.appspot.com/
 [link2]: http://search.maven.org/
 [link3]: https://bintray.com/bintray/jcenter

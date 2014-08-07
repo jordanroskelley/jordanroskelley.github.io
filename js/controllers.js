@@ -44,4 +44,21 @@ angular.module('myApp.controllers', [])
 		});
 
 	/************************************* Controller Functions */
+}])
+.controller('RawPostCtrl', ['$scope', '$http', '$routeParams', '$sce', function ($scope, $http, $routeParams, $sce) {
+	/***************************************** Controller Setup */
+	$scope.isLoading = true;
+	var url = '/posts/' + $routeParams.postUrl;
+	$http.get(url)
+		.success(function(data) {
+			$scope.post = $sce.trustAsHtml(data);
+		})
+		.error(function(data, status) {
+			console.log('error');
+		})
+		.finally(function() {
+			$scope.isLoading = false;
+		});
+
+	/************************************* Controller Functions */
 }]);

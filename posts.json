@@ -69,8 +69,26 @@
 		"title":	"Bootstrap Examples",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-06 15:30",
-		"file":		"posts/2014-08-06_Bootstrap_Examples.md",
+		"file":		"rawposts/2014-08-06_Bootstrap_Examples.html",
 		"tags":		["all", "web", "bootstrap", "css", "design", "javascript"]
+	},{
+		"title":	"Meta Programming",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-07 12:30",
+		"file":		"posts/2014-08-07_Meta.md",
+		"tags":		["all", "programming", "meta"]
+	},{
+		"title":	"Web API Design",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-07 14:00",
+		"file":		"posts/2014-08-07_Web_API_Design.md",
+		"tags":		["all", "api", "webservice"]
+	},{
+		"title":	"Using Retrofit",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-07 14:15",
+		"file":		"posts/2014-08-07_Android_Using_Retrofit.md",
+		"tags":		["all", "android", "retrofit"]
 	}
 ],
 "alltags":[
@@ -78,6 +96,7 @@
 	"advanced",
 	"all",
 	"android",
+	"api",
 	"bootstrap",
 	"build",
 	"css",
@@ -89,13 +108,17 @@
 	"keystore",
 	"library",
 	"markdown",
+	"meta",
 	"native",
 	"node",
 	"npm",
 	"posts",
 	"project",
+	"programming",
+	"retrofit",
 	"setup",
 	"studio",
 	"todo",
-	"web"
+	"web",
+	"webservice"
 ]}

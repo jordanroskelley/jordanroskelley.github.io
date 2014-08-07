@@ -43,7 +43,5 @@ List of devices attached
 
 [http://developer.android.com/tools/help/adb.html#wireless][link2]
 
----
-
 [link1]: http://developer.android.com/tools/help/adb.html
 [link2]: http://developer.android.com/tools/help/adb.html#wireless
