@@ -10,13 +10,13 @@
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-01 13:00",
 		"file":		"2014-08-01/Markdown.md",
-		"tags":		["all", "markdown", "posts"]
+		"tags":		["all", "markdown"]
 	},{
 		"title":	"Setting up for Android Development",
 		"author":	"Jordan Roskelley",
 		"created":	"2014-08-01 14:00",
 		"file":		"2014-08-01/Android_Setup.md",
-		"tags":		["all", "android", "studio", "native"]
+		"tags":		["all", "android", "studio", "native", "setup"]
 	},{
 		"title":	"Android Keystore",
 		"author":	"Jordan Roskelley",
