@@ -34,3 +34,5 @@ Things I would like to write about:
 		* Sending Push notifications with PushSharp
 * Oracle
 	* Setting up for .NET/Oracle development
+* Database
+	* Thread pooling

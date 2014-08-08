@@ -4,7 +4,7 @@
 
 ### What
 
-We want to be able to hit our local IIS server from another machine. Here's how
+We want to be able to hit our local IIS server from another machine on the network. Here's how
 
 ---
 

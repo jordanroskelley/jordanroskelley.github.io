@@ -1,4 +1,4 @@
-/* global angular: false, toastr: false, BASE_URL: false */
+/* global angular: false */
 'use strict';
 
 angular.module('myApp.controllers', [])
@@ -10,7 +10,7 @@ angular.module('myApp.controllers', [])
 	
 	/***************************************** Controller Setup */
 	$scope.isLoading = true;
-	var url = '/posts.json';
+	var url = '/posts/posts.json';
 	$http.get(url)
 		.success(function(data) {
 			$scope.posts = data.posts;
@@ -31,27 +31,11 @@ angular.module('myApp.controllers', [])
 .controller('PostCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
 	/***************************************** Controller Setup */
 	$scope.isLoading = true;
-	var url = '/posts/' + $routeParams.postUrl;
+	var url = '/posts/' + $routeParams.postFolder + '/' + $routeParams.postName;
+
 	$http.get(url)
 		.success(function(data) {
 			$scope.post = data;
-		})
-		.error(function(data, status) {
-			console.log('error');
-		})
-		.finally(function() {
-			$scope.isLoading = false;
-		});
-
-	/************************************* Controller Functions */
-}])
-.controller('RawPostCtrl', ['$scope', '$http', '$routeParams', '$sce', function ($scope, $http, $routeParams, $sce) {
-	/***************************************** Controller Setup */
-	$scope.isLoading = true;
-	var url = '/posts/' + $routeParams.postUrl;
-	$http.get(url)
-		.success(function(data) {
-			$scope.post = $sce.trustAsHtml(data);
 		})
 		.error(function(data, status) {
 			console.log('error');
