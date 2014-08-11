@@ -1,6 +1,8 @@
 # Angular.js Example
 
-Angular has an [official tutorial][link1]. At some point, I'd recommend going through it, it explains a lot of concepts that I won't cover here. The downside to their tutorial is that is it long and pretty involved.
+Angular has an [official tutorial][link1]. There is also a free online 'class' you can take at Code School [here][link7] At some point, I'd recommend going through them, they explain a lot of concepts that I won't cover here. The downside to those tutorials is that they are long and pretty involved (the upside is they are long and involved).
+
+One other thing to note. Many of the following Angular examples won't work unless the files are being served (by a server, not your file system). You could go get Apache, IIS or some other full blown server... But I just use Python. If you have Python installed, you can open a command prompt, change to the directory of your project, and type: `python -m SimpleHTTPServer`. This will start a server and start serving files out of that directory at whatever URL they tell you (usually localhost:8000).
 
 ---
 
@@ -87,7 +89,7 @@ And in our controllers.js file:
 angular
 	.module('myApp.controllers', [])
 	.controller('HomeCtrl', ['$scope', function ($scope) {
-		$scope.name = '[PLACEHOLDER]';
+		$scope.name = 'username';
 	}]);
 ```
 
@@ -149,9 +151,12 @@ OK, now we have all the Legos, lets build something. Update your index.html like
 
 [https://github.com/johnpapa/angularjs-styleguide][link6]
 
+[https://www.codeschool.com/courses/shaping-up-with-angular-js][link7]
+
 [link1]: https://docs.angularjs.org/tutorial
 [link2]: /examples/angular/step1/
 [link3]: /examples/angular/step2/
 [link4]: /examples/angular/step3/
 [link5]: /examples/angular/step0/MyProject.zip
 [link6]: https://github.com/johnpapa/angularjs-styleguide
+[link7]: https://www.codeschool.com/courses/shaping-up-with-angular-js

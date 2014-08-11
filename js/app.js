@@ -34,7 +34,7 @@ angular.module('myApp', [
  ************************************************************/
 .config(['$routeProvider', function($routeProvider) {
 	//OPEN ROUTES
-	$routeProvider.when('/', { templateUrl: 'partials/home.html', controller: 'HomeCtrl' });
+	$routeProvider.when('/', { templateUrl: 'partials/posts.html', controller: 'PostsCtrl' });
 	$routeProvider.when('/:postFolder/:postName', { templateUrl: 'partials/post.html', controller: 'PostCtrl' });
 
 	//DEFAULT ROUTE

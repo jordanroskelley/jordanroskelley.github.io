@@ -5,12 +5,12 @@ angular.module('myApp.controllers', [])
 /************************************************************
  * Open Controllers
  ************************************************************/
-.controller('HomeCtrl', ['$scope', '$http', function ($scope, $http) {
-	$scope.posts = [];
-	
+.controller('PostsCtrl', ['$scope', '$http', function ($scope, $http) {
 	/***************************************** Controller Setup */
 	$scope.isLoading = true;
 	var url = '/posts/posts.json';
+
+	$scope.posts = [];
 	$http.get(url)
 		.success(function(data) {
 			$scope.posts = data.posts;

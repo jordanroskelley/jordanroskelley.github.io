@@ -26,6 +26,7 @@ Things I would like to write about:
 	* Customizing Bootstrap with Sass and Grunt
 	* Angular
 * Server
+	* CORS
 	* OpenShift
 	* Sass
 	* MySQL

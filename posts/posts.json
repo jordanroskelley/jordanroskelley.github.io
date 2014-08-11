@@ -113,6 +113,30 @@
 		"created":	"2014-08-08 11:00",
 		"file":		"2014-08-08/Angular_Example.md",
 		"tags":		["all", "angular"]
+	},{
+		"title":	"Angular.js Partials",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-09 14:30",
+		"file":		"2014-08-09/Angular_Partials.md",
+		"tags":		["all", "angular"]
+	},{
+		"title":	"Angular.js HTTP",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-11 08:30",
+		"file":		"2014-08-11/Angular_HTTP.md",
+		"tags":		["all", "angular", "http"]
+	},{
+		"title":	"Angular.js Views",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-11 13:30",
+		"file":		"2014-08-11/Angular_Views.md",
+		"tags":		["all", "angular", "view"]
+	},{
+		"title":	"CORS",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-11 13:30",
+		"file":		"2014-08-11/CORS.md",
+		"tags":		["all", "cors"]
 	}
 ],
 "alltags":[
@@ -124,12 +148,14 @@
 	"api",
 	"bootstrap",
 	"build",
+	"cors",
 	"css",
 	"deploy",
 	"design",
 	"folder",
 	"funny",
 	"grunt",
+	"http",
 	"iis",
 	"javascript",
 	"keystore",
@@ -147,6 +173,7 @@
 	"setup",
 	"studio",
 	"todo",
+	"view",
 	"web",
 	"webservice"
 ]}
