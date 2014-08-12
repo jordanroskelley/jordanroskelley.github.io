@@ -137,6 +137,30 @@
 		"created":	"2014-08-11 13:30",
 		"file":		"2014-08-11/CORS.md",
 		"tags":		["all", "cors"]
+	},{
+		"title":	"The Web Stack",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-12 11:30",
+		"file":		"2014-08-12/Web_Stack.md",
+		"tags":		["all", "web", "browser"]
+	},{
+		"title":	"Cocoapods",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-12 13:00",
+		"file":		"2014-08-12/Cocoapods.md",
+		"tags":		["all", "ios", "cocoapods"]
+	},{
+		"title":	"Push Notification Architecture",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-12 16:00",
+		"file":		"2014-08-12/Push_Notification_Architecture.md",
+		"tags":		["all", "push"]
+	},{
+		"title":	"Sending Push Notifications",
+		"author":	"Jordan Roskelley",
+		"created":	"2014-08-12 17:00",
+		"file":		"2014-08-12/Push_Notification_Server.md",
+		"tags":		["all", "push", "c#"]
 	}
 ],
 "alltags":[
@@ -147,7 +171,10 @@
 	"angular",
 	"api",
 	"bootstrap",
+	"browser",
 	"build",
+	"c#",
+	"cocoapods",
 	"cors",
 	"css",
 	"deploy",
@@ -157,6 +184,7 @@
 	"grunt",
 	"http",
 	"iis",
+	"ios",
 	"javascript",
 	"keystore",
 	"library",
@@ -169,6 +197,7 @@
 	"posts",
 	"project",
 	"programming",
+	"push",
 	"retrofit",
 	"setup",
 	"studio",

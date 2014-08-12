@@ -14,7 +14,6 @@ Things I would like to write about:
 	* Setting up the IDE
 	* Keys, keys, keys ~weep silently~
 	* Creating simple views
-	* CocoaPods
 	* Using AFNetworking
 	* Adding Google Analytics
 	* Push notifications
@@ -26,13 +25,13 @@ Things I would like to write about:
 	* Customizing Bootstrap with Sass and Grunt
 	* Angular
 * Server
-	* CORS
 	* OpenShift
 	* Sass
 	* MySQL
 	* .NET
 		* WebAPI Overview
 		* Sending Push notifications with PushSharp
+		* Writing a system service for PushSharp
 * Oracle
 	* Setting up for .NET/Oracle development
 * Database
