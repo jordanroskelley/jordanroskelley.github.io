@@ -142,6 +142,7 @@ OK, now we have all the Legos, lets build something. Update your index.html like
 * There is so much more to Angular than this. This just shows the model and the view interacting.
 * For now, having app.js and controllers.js in separate files may seem like overkill (and for this example, it probably is), but it helps keep things clean in the future.
 * For lots more Angular style advice, I'd recommend eventually reading this (fairly long) [article][link6]. For now, it's probably a little deep.
+* Another great AngularJS tutorial is at [codeschool][link8]. They do a great job explaining the pieces and steps.
 
 ---
 
@@ -153,6 +154,8 @@ OK, now we have all the Legos, lets build something. Update your index.html like
 
 [https://www.codeschool.com/courses/shaping-up-with-angular-js][link7]
 
+[https://www.codeschool.com/courses/shaping-up-with-angular-js][link8]
+
 [link1]: https://docs.angularjs.org/tutorial
 [link2]: /examples/angular/step1/
 [link3]: /examples/angular/step2/
@@ -160,3 +163,4 @@ OK, now we have all the Legos, lets build something. Update your index.html like
 [link5]: /examples/angular/step0/MyProject.zip
 [link6]: https://github.com/johnpapa/angularjs-styleguide
 [link7]: https://www.codeschool.com/courses/shaping-up-with-angular-js
+[link8]: https://www.codeschool.com/courses/shaping-up-with-angular-js

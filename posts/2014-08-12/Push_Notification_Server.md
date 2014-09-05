@@ -109,7 +109,7 @@ That gives us the certificate, but in the wrong format. We don't want this `cer`
 * You’ll see both a certificate and a private key.
 * Select both the certificate and key, choose File > Export Items, and export them as a Personal Information Exchange (.p12) file.
 
-This file is your `<YOUR_CERT_FILE_NAME_HERE>.p12` from our PushSharp demo above
+This file is your `<YOUR_CERT_FILE_NAME_HERE>.p12` from our PushSharp demo above. When you export it, you will have to enter a password for the file. This is the password that goes in `<CERT_PASSWORD_HERE>`.
 
 ---
 

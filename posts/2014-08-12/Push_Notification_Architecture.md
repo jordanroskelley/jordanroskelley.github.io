@@ -4,7 +4,7 @@
 
 # Why are push notifications cool?
 
-Before push, if you wanted to send semi-real-time data to a user, they had to poll your site (meaning they would check for updates every X seconds). Remember, with HTTP once the client makes a request they disappear, and until they talk to you again, you don't know how to reach them. This worked, but it required your device to wake up, turn on it's network connection, talk to the server, then, if there was actually data, do something. The problem is that nearly all the time, there was no new data. For a desktop, this was an annoyance, but not the end of the world. You have virtually unlimited power and network resources. On a mobile device, this is a problem. Your mobile device is battery powered, and one of the big battery drains is your network. If you have to wake up the WiFi every X seconds, then your device battery is sad.
+Before push, if you wanted to send semi-real-time data to a user, they had to poll your site (meaning they would check for updates every X seconds). Remember, with HTTP once the client makes a request they disappear, and until they talk to you again, you don't know how to reach them. This polling worked, but it required your device to wake up, turn on it's network connection, talk to the server, then, if there was actually data, do something. The problem is that nearly all the time, there was no new data. For a desktop, this was an annoyance, but not the end of the world. You have virtually unlimited power and network resources. On a mobile device, this is a problem. Your mobile device is battery powered, and one of the big battery drains is your network. If you have to wake up the WiFi every X seconds, then your device battery is sad.
 
 ---
 

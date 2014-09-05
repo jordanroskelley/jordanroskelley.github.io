@@ -25,7 +25,7 @@ platform :ios, '7.0'
 pod "AFNetworking", "~> 2.0"
 ```
 * Then, from your project folder, just run `pod install` to download the libraries.
-* One side affect of using Cocoapods is that you can no longer open your `xcodeproj` file, but you now have to use the `xcworkspace` file.
+* One side effect of using Cocoapods is that you can no longer open your `xcodeproj` file, but you now have to use the `xcworkspace` file.
 * Now, you can just import and use that library in your code
 
 ---

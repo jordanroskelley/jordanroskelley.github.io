@@ -47,9 +47,21 @@ Go [download Bootstrap][link5]. Once downloaded, you will need to add it to your
 
 ### Grid System
 
-If you've never used a grid system before, it can be a bit confusing at first. Basically, imagine your page being vertically divided into twelve slices. You can break up those twelve slices however you want. Things didn't really gel for me until I saw a picture:
+If you've never used a grid system before, it can be a bit confusing at first. Basically, imagine your page being vertically divided into twelve slices. You can break up those twelve slices however you want. Things didn't really gel for me until I saw some pictures:
 
 ![Grid][img2]
+
+Here is the grid
+
+![Grid][img3]
+
+Here are some sites, laid out using the grid
+
+![Grid][img4]
+
+![Grid][img5]
+
+![Grid][img6]
 
 If you want to play with an example to see how this works on a page, check out the [Bootstrap Example][link3]
 
@@ -108,3 +120,7 @@ Beyond the above, the documentation is fairly easy to understand, and they have 
 
 [img1]: /assets/2014-08-06/bootstrap.png
 [img2]: /assets/2014-08-06/12grid.png
+[img3]: /assets/2014-08-06/grid1.png
+[img4]: /assets/2014-08-06/grid2.png
+[img5]: /assets/2014-08-06/grid3.png
+[img6]: /assets/2014-08-06/grid4.png
