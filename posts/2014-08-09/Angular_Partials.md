@@ -1,10 +1,11 @@
 # Angular Partials
+#### 8/9/2014
 
 ---
 
 ### What are they?
 
-In most views, you have a shell that goes around your page (title, header, navigation, footer, etc) and then content on the inside that changes. Well, this is pretty easy to do with Angular. If you looked at the Angular Example post, you created an index page. This is often your shell. Then, inside your shell, you define an area where content goes.
+In most web pages, you have a shell that goes around your page (title, header, navigation, footer, etc) and then content on the inside that changes. Well, this is pretty easy to do with Angular. If you looked at the Angular Example post, you created an index page. This is often your shell. Then, inside your shell, you define an area where content goes.
 
 ---
 

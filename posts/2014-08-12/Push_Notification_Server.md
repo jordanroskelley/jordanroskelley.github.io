@@ -1,5 +1,6 @@
 # Sending Push Notifications
-### using PushSharp
+#### Using PushSharp
+#### 8/12/2014
 
 ![PushSharp][img1]
 
@@ -52,7 +53,7 @@ push.QueueNotification(new GcmNotification()
 						.WithJson("{\"alert\":\"Hello World!\"}"));
 ```
 
-First, you will need to get authorization tokens and certificates set up with Google and Apple.
+First, you will need to get authorization tokens and certificates set up with Google and Apple (and whomever else, they also support Windows Phone, Amazon Kindle, Blackberry and more).
 
 ---
 

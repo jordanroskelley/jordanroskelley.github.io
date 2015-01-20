@@ -1,4 +1,5 @@
 # Angular.js Example
+#### 8/8/2014
 
 Angular has an [official tutorial][link1]. There is also a free online 'class' you can take at Code School [here][link7] At some point, I'd recommend going through them, they explain a lot of concepts that I won't cover here. The downside to those tutorials is that they are long and pretty involved (the upside is they are long and involved).
 

@@ -1,4 +1,6 @@
 # Meta Programming
+#### 8/7/2014
+##### Last Updated 1/20/2015
 
 ---
 
@@ -15,6 +17,8 @@ Here are links to articles that changed how I look at programming and software d
 * [Holding a Program In One's Head][link7]
 * [How to Work with Software Engineers][link8]
 * [The Programmer's Bill of Rights][link9]
+* [Why We (Still) Believe in Private Offices][link10]
+* [Private Offices Redux][link11]
 
 ---
 
@@ -54,6 +58,10 @@ Here are some people/blogs I think are worth spending time on
 
 [http://blog.codinghorror.com/the-programmers-bill-of-rights/][link9]
 
+[http://blog.stackoverflow.com/2015/01/why-we-still-believe-in-private-offices/][link10]
+
+[http://www.joelonsoftware.com/items/2006/07/30.html][link11]
+
 
 [link1]: http://www.paulgraham.com/makersschedule.html
 [link2]: http://martinrue.com/posts/6/what-is-the-zone-anyway
@@ -64,6 +72,8 @@ Here are some people/blogs I think are worth spending time on
 [link7]: http://paulgraham.com/head.html
 [link8]: https://www.kennethnorton.com/essays/how-to-work-with-software-engineers.html
 [link9]: http://blog.codinghorror.com/the-programmers-bill-of-rights/
+[link10]: http://blog.stackoverflow.com/2015/01/why-we-still-believe-in-private-offices/
+[link11]: http://www.joelonsoftware.com/items/2006/07/30.html
 
 [people1]: http://blog.codinghorror.com/
 [people2]: http://www.hanselman.com/blog/

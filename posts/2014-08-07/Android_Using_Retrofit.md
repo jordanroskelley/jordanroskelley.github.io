@@ -1,4 +1,5 @@
 # Using Retrofit
+#### 8/7/2014
 
 ![Square][img1]
 
@@ -125,7 +126,10 @@ Break it down
 
 
 
-Then, I build a ServiceProvider, which gives you a singleton of your service.
+Then, I build a ServiceProvider, which gives you a singleton of your service. This singleton is important because:
+
+* it won't be recreated with each call (service setup is expensive)
+* it allows you to use caching
 
 ```
 package com.whatever;
@@ -155,10 +159,10 @@ public enum ServiceProvider {
 
 What is this?
 
-* We only want to create one MyService (they're kind of expensive). So this makes it a singleton we can reuse.
 * If we have one, get it, otherwise create a new MyService
 * We give our RestAdapter an endpoint (the server to call)
 * We turn logging on, this will log all HTTP calls (comment out this line for production)
+* If you need to connect to multiple sites, you could refactor to pass in an id (or better, an identifier from an enum), and return the correct adapter
 
 Ok, now you have all the set up stuff out of the way, let's actually use it.
 

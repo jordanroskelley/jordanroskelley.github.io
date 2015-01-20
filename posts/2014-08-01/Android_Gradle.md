@@ -1,4 +1,5 @@
 # Gradle and the Android Build Process
+#### 8/1/2014
 
 ![Gradle][img2]
 
