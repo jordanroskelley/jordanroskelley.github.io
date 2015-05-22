@@ -19,6 +19,7 @@ Here are links to articles that changed how I look at programming and software d
 * [The Programmer's Bill of Rights][link9]
 * [Why We (Still) Believe in Private Offices][link10]
 * [Private Offices Redux][link11]
+* [Paying Down Your Technical Debt][link12]
 
 ---
 
@@ -31,10 +32,11 @@ Here are some people/blogs I think are worth spending time on
 * [Scott Hanselman][people2] works on the web team at Microsoft
 * [Paul Irish][people4] developer advocate at Google, works on Modernizr, Html5BP (and a ton of others)
 * [Ilya Grigorik][people5] developer advocate at Google, works on web performance
-* [Addy Osmani][people7] Engineer at Google, works on Chrome and Polymer
+* [Addy Osmani][people7] engineer at Google, works on Chrome and Polymer
 * [Paul Lewis][people6] UI/UX guy at Google
-* [Lara Swanson][people8] Engineering Manager of Performance at Etsy
+* [Lara Swanson][people8] engineering Manager of Performance at Etsy
 * [Tor Norbye][people9] works on the Android team at Google
+* [Joel Spolsky][people10] CEO of Stack Exchange
 
 ---
 
@@ -62,6 +64,8 @@ Here are some people/blogs I think are worth spending time on
 
 [http://www.joelonsoftware.com/items/2006/07/30.html][link11]
 
+[http://blog.codinghorror.com/paying-down-your-technical-debt/][link12]
+
 
 [link1]: http://www.paulgraham.com/makersschedule.html
 [link2]: http://martinrue.com/posts/6/what-is-the-zone-anyway
@@ -74,6 +78,7 @@ Here are some people/blogs I think are worth spending time on
 [link9]: http://blog.codinghorror.com/the-programmers-bill-of-rights/
 [link10]: http://blog.stackoverflow.com/2015/01/why-we-still-believe-in-private-offices/
 [link11]: http://www.joelonsoftware.com/items/2006/07/30.html
+[link12]: http://blog.codinghorror.com/paying-down-your-technical-debt/
 
 [people1]: http://blog.codinghorror.com/
 [people2]: http://www.hanselman.com/blog/
@@ -84,3 +89,4 @@ Here are some people/blogs I think are worth spending time on
 [people7]: http://addyosmani.com/blog/
 [people8]: http://laraswanson.com/
 [people9]: https://plus.google.com/u/0/+TorNorbye/posts
+[people10]: http://www.joelonsoftware.com/
