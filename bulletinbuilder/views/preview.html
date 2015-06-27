@@ -1,0 +1,94 @@
+<!-- 
+TODO: 
+-Wrap sections in divs (or directives?), so we can change order later
+-Make sure things have more checks (ie, has data) before showing	
+-Create way to turn on/off/reorder things... yikes
+-->
+
+<h1>Preview</h1>
+
+<!-- Begin Cover -->
+<h2>Cover</h2>
+<hr>
+<h2 class='text-center'>The Church of Jesus Christ<br>of Latter-Day Saints</h2>
+<h4 class='text-center'>{{ d.wardName }}</h4>
+<h4 class='text-center'>{{ d.date | date }}</h4>
+
+<img class='center-block' ng-src='{{ d.cover.imageUrl }}' />
+
+<!-- TODO: figure out how to retain quote formatting... -->
+<blockquote>
+	<p>{{ d.cover.quote }}</p>
+	<footer>{{ d.cover.author }}</footer>
+</blockquote>
+<!-- End Cover -->
+<p style="page-break-after:always;"></p>
+<!-- Begin Program -->
+<hr>
+<h2>Sacrament Meeting</h2>
+<div class='row' ng-repeat='e in d.program.events'>
+	<div class='col-sm-4'>
+		<p>{{ e.left }}</p>
+	</div>
+	<div class='col-sm-4'>
+		<p class='center'>{{ e.center }}</p>
+	</div>
+	<div class='col-sm-4'>
+		<p class='text-right'>{{ e.right }}</p>
+	</div>
+</div>
+<!-- End Program -->
+<p style="page-break-after:always;"></p>
+<!-- Begin Announcements -->
+<hr>
+<h2>Announcements</h2>
+<div class='row' ng-repeat='a in d.announcements'>
+	<ul class='list-unstyled col-sm-12'>
+		<li><h4>{{ a.title }} <small>{{ a.date }} {{ a.time }}</small></h4></li>
+		<li>{{ a.description }}</li>
+	</ul>
+</div>
+<!-- End Announcements-->
+<p style="page-break-after:always;"></p>
+<!-- Begin Leadership Info -->
+<hr>
+<h2>Ward Leadership</h2>
+<table class='table table-striped table-condensed'>
+	<thead>
+	</thead>
+		<tr>
+			<td>Position</td>
+			<td class='text-center'>Name</td>
+			<td class='text-right'>Phone</td>
+		</tr>
+	<tbody>
+		<tr ng-repeat='leader in d.bishopric'>
+			<td>{{ leader.position }}</td>
+			<td class='text-center'>{{ leader.name }}</td>
+			<td class='text-right'>{{ leader.phone }}</td>
+		</tr>
+		<tr ng-repeat='leader in d.leadership'>
+			<td>{{ leader.position }}</td>
+			<td class='text-center'>{{ leader.name }}</td>
+			<td class='text-right'>{{ leader.phone }}</td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- only show if ward has any missionaries -->
+<div ng-show='d.missionaries'>
+	<h2>Missionaries</h2>
+	<div class='row'>
+		<!-- NOTE: these are xs to make printing look nice... work on this -->
+		<div class='col-xs-6' ng-repeat='m in d.missionaries'>
+			<address>
+				<strong>{{ m.name }}</strong><br>
+				{{ m.mission }}<br>
+				{{ m.street }}<br>
+				{{ m.city }}, {{ m.state }} {{ m.zip }}<br>
+				{{ m.country }}
+			</address>
+		</div>
+	</div>
+</div>
+<!-- End Leadership Info-->

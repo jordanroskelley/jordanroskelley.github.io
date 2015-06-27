@@ -1,0 +1,337 @@
+<!--
+TODO:
+- Why is position not staying selected???
+		https://docs.angularjs.org/api/ng/directive/select
+		https://docs.angularjs.org/api/ng/directive/ngOptions
+- Fix row layouts for all... they are pretty bad :/
+- What else could we need? 
+	events - recurring
+	announcements - one time
+	program itself (probably enter on a different screen...)
+	front of program stuff (image, quote, etc)
+-->
+
+<h2>Bulletin</h2>
+<div class='row'>
+	<div class='form-group col-xs-4'>
+		<label class='control-label'>Bulletin Name</label>
+		<input class='form-control' ng-model='d.name' />
+	</div>
+	<div class='form-group col-xs-4'>
+		<label class='control-label'>Ward Name</label>
+		<input class='form-control' ng-model='d.wardName' />
+	</div>
+	<div class='form-group col-xs-4'>
+		<label class='control-label'>Bulletin Date</label>
+		<div class="input-group">
+			<input
+				type="text"
+				class="form-control"
+				ng-model="d.date"
+				ng-required="true"
+				datepicker-options="{ formatYear: 'yy', startingDay: 0, showWeeks: false }"
+				close-text="Close"
+				is-open="opened"
+				datepicker-popup="MM/dd/yyyy" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="open($event)">
+					<span class="glyphicon glyphicon-calendar"></span>
+				</button>
+			</span>
+        </div>
+	</div>
+</div>
+
+<div class='panel panel-info'>
+	<div class='panel-heading'>
+		<h3 class='panel-title'>Bishopric</h3>
+	</div>
+	<div class='panel-body' sv-root sv-part="d.bishopric">
+		<div class='row' ng-show='d.bishopric' ng-repeat='member in d.bishopric' sv-element>
+			<div class='form-group col-xs-1'>
+				<span class='glyphicon glyphicon-th text-success' style='padding-top:30px; padding-left:10px; font-size:1.5em;' title='Click and move me' sv-handle></span>
+			</div>
+			<div class='form-group col-xs-4'>
+				<label class='control-label'>Position</label>
+				<select
+					class='form-control input-sm'
+					ng-model='member.position'
+					ng-options="option as option for option in bishopricPositions">
+				</select>
+			</div>
+			<div class='form-group col-xs-3'>
+				<label class='control-label'>Name</label>
+				<input class='form-control input-sm' ng-model='member.name'/> 
+			</div>
+			<div class='form-group col-xs-3'>
+				<label class='control-label'>Phone</label>
+				<input class='form-control input-sm' ng-model='member.phone'/> 
+			</div>
+			<div class='input-group col-xs-1' style='padding-top:26px'>
+				<button class="btn btn-sm btn-danger" ng-click="removeBishopric($index)">
+					<span class="glyphicon glyphicon-trash"></span>
+				</button>
+			</div>
+		</div>
+		
+		<div class='row' ng-show='!d.bishopric'>
+			<div class='col-sm-12'>
+				You have no bishopric yet, add some...
+			</div>
+		</div>
+		<button class='btn btn-sm btn-success pull-right' ng-click='addBishopric();'>Add New</button>
+	</div>
+</div>
+
+<div class='panel panel-info'>
+	<div class='panel-heading'>
+		<h3 class='panel-title'>Leadership</h3>
+	</div>
+	<div class='panel-body' sv-root sv-part='d.leadership'>
+		<div class='row' ng-show='d.leadership' ng-repeat='member in d.leadership' sv-element>
+			<div class='form-group col-xs-1'>
+				<span class='glyphicon glyphicon-th text-success' style='padding-top:30px; padding-left:10px; font-size:1.5em;' title='Click and move me' sv-handle></span>
+			</div>
+			<div class='form-group col-xs-4'>
+				<label class='control-label'>Position</label>
+				<select
+					class='form-control input-sm'
+					ng-model='member.position'
+					ng-options='p for p in leadershipPositions'>
+				</select>
+			</div>
+			<div class='form-group col-xs-3'>
+				<label class='control-label'>Name</label>
+				<input class='form-control input-sm' ng-model='member.name'/> 
+			</div>
+			<div class='form-group col-xs-3'>
+				<label class='control-label'>Phone</label>
+				<input class='form-control input-sm' ng-model='member.phone'/> 
+			</div>
+			<div class='input-group col-xs-1' style='padding-top:26px'>
+				<button class="btn btn-sm btn-danger" ng-click="removeLeadership($index)">
+					<span class="glyphicon glyphicon-trash"></span>
+				</button>
+			</div>
+		</div>
+		
+		<div class='row' ng-show='!d.leadership'>
+			<div class='col-sm-12'>
+				You have no leadership yet, add some...
+			</div>
+		</div>
+		<button class='btn btn-sm btn-success pull-right' ng-click='addLeadership();'>Add New</button>
+	</div>
+</div>
+
+<div class='panel panel-info'>
+	<div class='panel-heading'>
+		<h3 class='panel-title'>Missionaries Serving</h3>
+	</div>
+	<div class='panel-body'>
+		<div class='row' ng-show='d.missionaries' ng-repeat='member in d.missionaries'>
+			<div class='form-group col-xs-5'>
+				<label class='control-label'>Name</label>
+				<input class='form-control input-sm' ng-model='member.name'/>
+			</div>
+			<div class='form-group col-xs-6'>
+				<label class='control-label'>Mission</label>
+				<input class='form-control input-sm' ng-model='member.mission'/>
+			</div>
+			<div class='input-group col-xs-1' style='padding-top:26px'>
+				<button class="btn btn-sm btn-danger" ng-click="removeMissionary($index)">
+					<span class="glyphicon glyphicon-trash"></span>
+				</button>
+			</div>
+			
+			<div class='form-group col-xs-12'>
+				<label class='control-label'>Street Address</label>
+				<input class='form-control input-sm' ng-model='member.street'/>
+			</div>
+			
+			<div class='form-group col-xs-7'>
+				<label class='control-label'>City</label>
+				<input class='form-control input-sm' ng-model='member.city'/>
+			</div>
+			<div class='form-group col-xs-2'>
+				<label class='control-label'>State</label>
+				<input class='form-control input-sm' ng-model='member.state'/>
+			</div>
+			<div class='form-group col-xs-3'>
+				<label class='control-label'>Zip Code</label>
+				<input class='form-control input-sm' ng-model='member.zip'/>
+			</div>
+			
+			<div class='form-group col-xs-12'>
+				<label class='control-label'>Country</label>
+				<input class='form-control input-sm' ng-model='member.country'/>
+			</div>
+			<!-- hr that only shows if more than one and this is not the last row -->
+			<div class='form-group col-xs-12'>
+				<hr ng-show='d.missionaries.length > 1 && ($index != d.missionaries.length - 1)'/>
+			</div>
+		</div>
+		
+		<div class='row' ng-show='!d.missionaries'>
+			<div class='col-sm-12'>
+				You have no missionaries yet, add some...
+			</div>
+		</div>
+		<button class='btn btn-sm btn-success pull-right' ng-click='addMissionary();'>Add New</button>
+	</div>
+</div>
+
+<div class='panel panel-info'>
+	<div class='panel-heading'>
+		<h3 class='panel-title'>Announcements</h3>
+	</div>
+	<div class='panel-body' sv-root sv-part='d.announcements'>
+		<div class='row' ng-show='d.announcements' ng-repeat='event in d.announcements' sv-element>
+			<div class='form-group col-xs-1'>
+				<span class='glyphicon glyphicon-th text-success' style='padding-top:30px; padding-left:10px; font-size:1.5em;' title='Click and move me' sv-handle></span>
+			</div>
+			<div class='form-group col-xs-4'>
+				<label class='control-label'>Type</label>
+				<select
+					class='form-control input-sm'
+					ng-model='event.type'
+					ng-options='p.title for p in eventTypes'/>
+			</div>
+			<!-- Date for one time -->
+			<div class='form-group col-xs-3'>
+				<label class='control-label'>Date</label>
+				<input class='form-control input-sm' ng-model='event.date'/>
+			</div>
+			
+			<!-- Day of week for weekly repeating -->
+			
+			<!-- Day of month for monthly repeating -->
+			
+			<!-- Begin time, end time, repeat interval, yikes -->
+			
+			<div class='form-group col-xs-3'>
+				<label class='control-label'>Time</label>
+				<input class='form-control input-sm' ng-model='event.time'/>
+			</div>
+			
+			<div class='input-group col-xs-1' style='padding-top:26px'>
+				<button class="btn btn-sm btn-danger" ng-click="removeAnnouncement($index)">
+					<span class="glyphicon glyphicon-trash"></span>
+				</button>
+			</div>
+			
+			<div class='form-group col-xs-6'>
+				<label class='control-label'>Title</label>
+				<input class='form-control input-sm' ng-model='event.title'/>
+			</div>
+			<div class='form-group col-xs-12'>
+				<label class='control-label'>Description (optional)</label>
+				<input class='form-control input-sm' ng-model='event.description'/>
+			</div>
+		</div>
+		
+		<div class='row' ng-show='!d.announcements'>
+			<div class='col-sm-12'>
+				You have no announcements yet, add some...
+			</div>
+		</div>
+		<button class='btn btn-sm btn-success pull-right' ng-click='addAnnouncement();'>Add New</button>
+	</div>
+</div>
+
+<div class='panel panel-info'>
+	<div class='panel-heading'>
+		<h3 class='panel-title'>Cover</h3>
+	</div>
+	<div class='panel-body'>
+		<div class='row'>
+			<div class='form-group col-sm-12'>
+				<label class='control-label'>Image URL</label>
+				<input class='form-control input-sm' ng-model='d.cover.imageUrl' />
+				<p class='help-block'>Find an image and paste it's URL here</p>
+			</div>
+			<div class='form-group col-sm-12' ng-show='d.cover.imageUrl'>
+				<img class='img-thumbnail' ng-src='{{ d.cover.imageUrl }}' />
+			</div>
+			<div class='form-group col-sm-12'>
+				<label class='control-label'>Quote</label>
+				<textarea class='form-control' rows='4' ng-model='d.cover.quote'></textarea>
+			</div>
+			<div class='form-group col-sm-12'>
+				<label class='control-label'>Quote Author</label>
+				<input class='form-control input-sm' ng-model='d.cover.author' />
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class='panel panel-info'>
+	<div class='panel-heading'>
+		<h3 class='panel-title'>Program</h3>
+	</div>
+	<div class='panel-body'>
+		
+		<!-- TODO: enable drag n drop -->
+		<!-- TODO: add edit and delete (enable changing type in edit) -->
+		<div ng-repeat='e in d.program.events'>
+			<div class='row'>
+				<div class='form-group col-sm-4'>
+					<label class='control-label'>Event Type</label>
+					<select 
+						class='form-control input-sm' 
+						ng-model='e.type' 
+						ng-options='type for type in programEventTypes'></select>
+				</div>
+			</div>
+
+			<div class='row'>
+				
+				<!-- Begin Speaker Type Edit -->
+				<div ng-show='e.type == "Speaker" && e.isEditing'>
+					<!-- TODO: somehow, when they select speaker, set left to 'Speaker' -->
+					<div class='form-group col-sm-4'>
+						<label class='control-label'>Name</label>
+						<input class='form-control input-sm' ng-model='e.right' />
+					</div>
+				</div>
+				<!-- End Speaker Type Edit -->
+				
+				<!-- Begin Hymn Type Edit -->
+				<div ng-show='e.type == "Hymn" && e.isEditing'>
+					<div class='form-group col-sm-4'>
+						<label class='control-label'>Hymn Kind</label>
+						<input class='form-control input-sm' placeholder='Opening Hymn' ng-model='e.left' />
+					</div>
+					<div class='form-group col-sm-8'>
+						<label class='control-label'>Hymn</label>
+						<select 
+							class='form-control input-sm' 
+							ng-model='e.hymn'
+							ng-change='changeHymn(e)'
+							ng-options='h.number as (h.number + " " + h.name) for h in hymns'></select>
+					</div>
+				</div>
+				<!-- End Hymn Type Edit -->
+				
+				<!-- Begin Other Type Edit -->
+				<div ng-show='e.type == "Other" && e.isEditing'>
+					<div class='form-group col-sm-4'>
+						<label class='control-label'>Left Text</label>
+						<input class='form-control input-sm' ng-model='e.left' />
+					</div>
+					<div class='form-group col-sm-4'>
+						<label class='control-label'>Center Text</label>
+						<input class='form-control input-sm' ng-model='e.center' />
+					</div>
+					<div class='form-group col-sm-4'>
+						<label class='control-label'>Right Text</label>
+						<input class='form-control input-sm' ng-model='e.right' />
+					</div>
+				</div>
+				<!-- End Other Type Edit -->
+			</div>
+			<pre>{{ e }}</pre>
+		</div>
+		<button class='btn btn-sm btn-success pull-right' ng-click='addProgramEvent();'>Add Event</button>
+	</div>
+</div>

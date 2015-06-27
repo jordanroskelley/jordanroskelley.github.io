@@ -1,0 +1,52 @@
+
+<h2>Home</h2>
+
+<p>Pick one below to edit, add a new blank one, or copy an existing one.</p>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2 class="panel-title">Bulletins</h2>
+	</div>
+	<div class="panel-body">
+		<div ng-show="d.length > 0">
+			<div ng-repeat='bulletin in d'>
+				<div class='row top-buffer' ng-hide='bulletin.isAdding || bulletin.isDeleting'>
+					<div class='col-xs-8'>{{ bulletin.name }}</div>
+					<div class='col-xs-4 btn-group btn-group-sm'>
+							<button class="btn btn-success" ng-click="edit($index)"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button class="btn btn-info" ng-click="copy($index)"><span class="glyphicon glyphicon-duplicate"></span></button>
+							<button class="btn btn-danger" ng-click="beginDelete($index)"><span class="glyphicon glyphicon-trash"></span></button>
+					</div>
+				</div>
+				
+				<div class='row top-buffer' ng-show='bulletin.isAdding'>
+					<div class="col-xs-8 form-group">
+						<input class="form-control" ng-model="bulletin.name" />
+					</div>
+					<div class='col-xs-4 btn-group btn-group-sm' style="padding-top:4px">
+							<button class="btn btn-info" ng-click="saveNew($index)"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+							<button class="btn btn-danger" ng-click="deleteNew($index)"><span class="glyphicon glyphicon-trash"></span></button>
+					</div>
+				</div>
+				
+				<div class='row top-buffer' ng-show='bulletin.isDeleting'>
+					<div class='col-xs-8'>
+						Are you sure you want to delete this bulletin?
+					</div>
+					<div class='col-xs-4 btn-group btn-group-sm'>
+							<button class="btn btn-default" ng-click="cancelDelete($index)">Cancel</button>
+							<button class="btn btn-danger" ng-click="confirmDelete($index)">Confirm</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div ng-hide="d.length > 0">
+			You have no bulletins yet. Hit load above, or add new below to get started.
+		</div>
+
+		<br>
+		<button class="btn btn-success" ng-click="beginAdd()">New From Scratch</button>
+	</div>
+</div>

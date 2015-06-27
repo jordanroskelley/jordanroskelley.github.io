@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#/home">Bulletin Builder</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-menu">
+			<ul class="nav navbar-nav navbar-right">
+				<!-- TODO: only show builder and preview when they have selected a bulletin -->
+				<li ng-show='isPreview'><a href ng-click="preview()">Preview</a></li>
+				<li ng-show='isBuilder'><a href ng-click="builder()">Builder</a></li>
+				
+				<li><a href ng-click="save()">Save</a></li>
+				<li><a href ng-click="load()">Load</a></li>
+				<li><a href ng-click="import()">Import</a></li>
+				<li><a href ng-click="export()">Export</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
